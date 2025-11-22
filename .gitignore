@@ -21,3 +21,13 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+pubspec.lock
+flutter_*.png
+ios/Pods/
+android/.gradle/
+android/local.properties

@@ -1,0 +1,23 @@
+name: mbs_flutter
+description: Flutter rebuild of the MBS management experience powered by Firebase.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.5.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.9.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.6.1
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
