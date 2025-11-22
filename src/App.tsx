@@ -31,7 +31,7 @@ function AppContent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center safe-area-top safe-area-bottom">
         <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-cyan-500"></div>
       </div>
     );
@@ -41,18 +41,19 @@ function AppContent() {
     return <LoginPage />;
   }
 
-  const pageTitle = {
-    dashboard: 'Tableau de bord',
-    inventory: 'Gestion des stocks',
-    customers: 'Gestion des clients',
-    orders: 'Gestion des commandes',
-    suppliers: 'Gestion des fournisseurs',
-    analytics: 'Analyses et rapports',
-    profile: 'Mon profil',
-  }[currentPage] || 'Tableau de bord';
+  const pageTitle =
+    {
+      dashboard: 'Tableau de bord',
+      inventory: 'Gestion des stocks',
+      customers: 'Gestion des clients',
+      orders: 'Gestion des commandes',
+      suppliers: 'Gestion des fournisseurs',
+      analytics: 'Analyses et rapports',
+      profile: 'Mon profil',
+    }[currentPage] || 'Tableau de bord';
 
   return (
-    <div className="min-h-screen bg-slate-950 flex">
+    <div className="min-h-screen bg-slate-950 flex safe-area-top safe-area-bottom">
       {!isMobile && <Sidebar currentPage={currentPage} onNavigate={setCurrentPage} />}
 
       <main className="flex-1 flex flex-col overflow-hidden">
