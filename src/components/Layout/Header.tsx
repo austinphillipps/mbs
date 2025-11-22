@@ -57,7 +57,7 @@ export function Header({ title }: HeaderProps) {
   };
 
   return (
-    <header className="bg-slate-900/50 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-10">
+    <header className="bg-slate-900/50 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-10 safe-area-top">
       <div className="px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <h2 className="text-lg md:text-2xl font-bold text-white truncate">{title}</h2>
 
